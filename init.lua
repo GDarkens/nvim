@@ -166,6 +166,11 @@ vim.o.scrolloff = 10
 -- See `:help 'confirm'`
 vim.o.confirm = true
 
+-- [[ Custom Keymaps ]]
+-- Use blackhole register for dd and d (delete) instead of replacing register used for system clipboard
+vim.keymap.set('n', 'dd', '"_dd')
+vim.keymap.set('v', 'd', '"_d')
+
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
